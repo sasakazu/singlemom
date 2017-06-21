@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  old: 1
+  live: MyString
+  children: MyText
+  profile: MyText
+  iwish: MyText
+
+two:
+  name: MyString
+  old: 1
+  live: MyString
+  children: MyText
+  profile: MyText
+  iwish: MyText
