@@ -1,24 +1,48 @@
 require 'test_helper'
 
 class MomsControllerTest < ActionDispatch::IntegrationTest
-  test "should get new" do
-    get moms_new_url
-    assert_response :success
+  setup do
+    @mom = moms(:one)
   end
 
   test "should get index" do
-    get moms_index_url
+    get moms_url
     assert_response :success
   end
 
-  test "should get show" do
-    get moms_show_url
+  test "should get new" do
+    get new_mom_url
+    assert_response :success
+  end
+
+  test "should create mom" do
+    assert_difference('Mom.count') do
+      post moms_url, params: { mom: { age: @mom.age, children: @mom.children, live: @mom.live, name: @mom.name, profile: @mom.profile, wish: @mom.wish } }
+    end
+
+    assert_redirected_to mom_url(Mom.last)
+  end
+
+  test "should show mom" do
+    get mom_url(@mom)
     assert_response :success
   end
 
   test "should get edit" do
-    get moms_edit_url
+    get edit_mom_url(@mom)
     assert_response :success
   end
 
+  test "should update mom" do
+    patch mom_url(@mom), params: { mom: { age: @mom.age, children: @mom.children, live: @mom.live, name: @mom.name, profile: @mom.profile, wish: @mom.wish } }
+    assert_redirected_to mom_url(@mom)
+  end
+
+  test "should destroy mom" do
+    assert_difference('Mom.count', -1) do
+      delete mom_url(@mom)
+    end
+
+    assert_redirected_to moms_url
+  end
 end

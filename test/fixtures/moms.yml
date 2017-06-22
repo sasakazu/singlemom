@@ -2,16 +2,16 @@
 
 one:
   name: MyString
-  old: 1
+  age: 1
   live: MyString
   children: MyText
   profile: MyText
-  iwish: MyText
+  wish: MyText
 
 two:
   name: MyString
-  old: 1
+  age: 1
   live: MyString
   children: MyText
   profile: MyText
-  iwish: MyText
+  wish: MyText

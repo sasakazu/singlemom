@@ -1,2 +1,41 @@
-<h1>Moms#show</h1>
-<p>Find me in app/views/moms/show.html.erb</p>
+
+<%= render 'shared/header' %>
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mom.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @mom.age %>
+</p>
+
+<p>
+  <strong>Live:</strong>
+  <%= @mom.live %>
+</p>
+
+<p>
+  <strong>Children:</strong>
+  <%= @mom.children %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @mom.profile %>
+</p>
+
+<p>
+  <strong>Wish:</strong>
+  <%= @mom.wish %>
+</p>
+
+<%= link_to 'Edit', edit_mom_path(@mom) %> |
+<%= link_to 'Back', moms_path %>
+
+
+<%= render 'shared/footer' %>
