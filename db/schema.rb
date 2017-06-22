@@ -10,17 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170621100136) do
-
-  create_table "moms", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "old"
-    t.string   "live"
-    t.text     "children"
-    t.text     "profile"
-    t.text     "iwish"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20170622042217) do
 
 end
