@@ -23,7 +23,7 @@
     text-align: center;
     padding: 20px;
     margin-bottom: 200px;
-    color: #FFF;
+    color: #FFF!important;
     margin: 0 auto;
     border: solid #FFF;
     width: 200px;
@@ -32,9 +32,9 @@
 
   a:hover {
     background: #FFF;
-    color: #333;
+    color: #333!important;
     font-weight: bold;
-    transition: all 1.0s;
+    transition: all .8s;
     text-decoration: none;
   }
 
