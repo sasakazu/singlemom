@@ -1,13 +1,22 @@
 
 <%= render 'shared/header' %>
 
+<div class="container">
 
-<h1>Editing Mom</h1>
+
+
+<h1 id="mom-edit-title">編集画面</h1>
 
 <%= render 'form', mom: @mom %>
 
 <%= link_to 'Show', @mom %> |
 <%= link_to 'Back', moms_path %>
+
+
+</div>
+
+
+
 
 
 <%= render 'shared/footer' %>

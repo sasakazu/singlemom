@@ -42,7 +42,7 @@ class MomsController < ApplicationController
   def update
     respond_to do |format|
       if @mom.update(mom_params)
-        format.html { redirect_to @mom, notice: 'Mom was successfully updated.' }
+        format.html { redirect_to @mom, notice: '更新成功！' }
         format.json { render :show, status: :ok, location: @mom }
       else
         format.html { render :edit }
@@ -69,6 +69,6 @@ class MomsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mom_params
-      params.require(:mom).permit(:name, :age, :live, :children, :profile, :wish)
+      params.require(:mom).permit(:name, :age, :live, :children, :profile, :wish, :image)
     end
 end

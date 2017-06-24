@@ -11,9 +11,17 @@
     </div>
   <% end %>
 
+  <div class="mom-form-wrapper">
+
+
   <div class="field">
     <%= f.label :名前 %><br>
     <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :写真 %><br>
+    <%= f.file_field :image %>
   </div>
 
   <div class="field">
@@ -45,6 +53,7 @@
     <%= f.submit '登録する' %>
   </div>
 
+</div>
 
 
 <% end %>

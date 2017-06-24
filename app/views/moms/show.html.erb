@@ -1,41 +1,55 @@
 
 <%= render 'shared/header' %>
-
-
 <p id="notice"><%= notice %></p>
 
+<div class="container">
+
+  <div class="mom-show-wrapper">
+
+    <p>
+      <%= image_tag(@mom.image) %>
+    </p>
+
 <p>
-  <strong>Name:</strong>
+  <strong>名前</strong>
   <%= @mom.name %>
 </p>
 
+
+
 <p>
-  <strong>Age:</strong>
-  <%= @mom.age %>
+  <strong>年齢</strong>
+  <%= @mom.age %>歳
 </p>
 
 <p>
-  <strong>Live:</strong>
+  <strong>おところ</strong>
   <%= @mom.live %>
 </p>
 
 <p>
-  <strong>Children:</strong>
+  <strong>子供について</strong>
   <%= @mom.children %>
 </p>
 
 <p>
-  <strong>Profile:</strong>
+  <strong>自己紹介</strong>
   <%= @mom.profile %>
 </p>
 
-<p>
-  <strong>Wish:</strong>
+<p id="last-show">
+  <strong>理想の人</strong>
   <%= @mom.wish %>
 </p>
+
+
+
 
 <%= link_to 'Edit', edit_mom_path(@mom) %> |
 <%= link_to 'Back', moms_path %>
 
+</div>
+
+</div>
 
 <%= render 'shared/footer' %>
