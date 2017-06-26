@@ -24,7 +24,7 @@ class MomsController < ApplicationController
   # POST /moms
   # POST /moms.json
   def create
-    @mom = Mom.new(mom_params)
+    @mom = current_user.build_mom(mom_params)
 
     respond_to do |format|
       if @mom.save
@@ -69,6 +69,6 @@ class MomsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mom_params
-      params.require(:mom).permit(:name, :age, :live, :children, :profile, :wish, :image)
+      params.require(:mom).permit(:name, :age, :live, :children, :profile, :wish, :image, :user_id)
     end
 end
