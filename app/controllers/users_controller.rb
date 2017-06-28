@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
 
   def show
+
     @user = User.find(params[:id])
-    @mom = Mom.find(params[:id])
+    @mom = @user.mom
+
+
   end
 
   def edit
@@ -15,11 +18,11 @@ class UsersController < ApplicationController
   private
 
       def user_params
-        params.require(:user).permit(:name, :age, :live, :children, :profile, :wish, :image)
+        params.require(:user).permit(:email)
       end
 
       def mom_params
-        params.require(:mom).permit(:name, :age, :live, :children, :profile, :wish, :image)
+        params.require(:mom).permit(:name, :age, :live, :children, :profile, :wish, :image,:user_id)
       end
 
 

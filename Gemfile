@@ -41,6 +41,8 @@ gem 'sqlite3', group: :development
 gem 'pg', group: :production
 gem 'devise'
 gem "carrierwave"
+gem 'will_paginate'
+
 
 
 
