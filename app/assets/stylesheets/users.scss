@@ -10,7 +10,7 @@
   margin-top: 100px;
   margin-bottom: 150px;
   background-color: rgb(154, 188, 195);
-  padding: 100px;
+  padding: 70px;
   border-radius: 7px;
 
   h2 {
@@ -40,4 +40,52 @@
 #edit-mom {
   text-align: center;
   margin-top: 20px;
+}
+
+
+// users/edit
+
+.user-edit-wrapper {
+  background-color: rgb(154,188,195);
+  padding: 50px;
+  border-radius: 7px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  h2 {
+    margin-bottom: 50px;
+
+  }
+
+}
+
+// users/sign_in
+
+.login-wrapper {
+  background-color: rgb(154,188,195);
+  padding: 50px;
+  border-radius: 7px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+
+    h2 {
+      margin-bottom: 50px;
+}
+
+}
+
+// users/sign_up
+
+.sign-up-wrapper {
+  background-color: rgb(154,188,195);
+  padding: 50px;
+  border-radius: 7px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+
+    h2 {
+      margin-bottom: 50px;
+      text-align: center;
+  }
+
 }
