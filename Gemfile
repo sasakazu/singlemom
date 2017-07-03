@@ -42,6 +42,8 @@ gem 'pg', group: :production
 gem 'devise'
 gem "carrierwave"
 gem 'will_paginate'
+gem 'mailboxer'
+
 
 
 

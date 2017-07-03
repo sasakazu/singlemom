@@ -6,4 +6,14 @@ class User < ApplicationRecord
 
   has_one :mom
 
+  acts_as_messageable
+
+  def name
+    "User #{id}"
+  end
+
+  def mailboxer_email(object)
+    nil
+  end
+
 end
